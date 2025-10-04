@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Personal Webpage</title>
+</head>
+<body>
+    <!-- Write the code for this;
+    HTML5 Webpage Assignment
+    Task
+    Create a basic HTML5 webpage that includes the following:
+● Personal Information Section
+○ Your Name
+○ Your Hobby
+○ Your Favorite Music
+○ A Video (use the <video> element with controls)
+○ An Audio (use the <audio> element with controls)
+○ A short Reason why you are in the Web Development field
+○ An Image using the <figure> element with a descriptive <figcaption>
+○ Highlight an important keyword or sentence using the <mark> element
+○ An <iframe> displaying a Google Map of any city
+○ A <footer> stating: @YourName 2025 Genesys Upskill
+● Use Semantic Elements
+○ <header>
+○ <main>
+○ <section>
+○ <article>
+○ <aside>
+ ○ <details> and <summary>
+○ <footer>
+● Contact Form Section
+Create a form that collects the following details:
+○ Name (text input)
+○ Email (email input)
+○ Phone Number (tel input)
+○ Gender (radio buttons or select)
+○ Country (use a <select> dropdown with a minimum of 3 countries and a
+maximum of 5 countries)
+○ Note (use a <textarea> where the user can write additional details, feedback,
+or message)
+     -->
+
+    
+ <header>
+ <h1>My Personal Webpage</h1>
+ </header>
+
+ <main>
+
+ <section id="personal-info">
+ <h2>Personal Information</h2>
+
+ <article>
+ <p>Name: Iniobong Okon Uya</p>
+ <p>Hobby: Reading</p>
+ <p>Favorite Music: Gospel</p>
+<br><br>
+ <video src="video1.mp4" type="video/mp4" width="320px" height="240px" controls></video>
+<br><br><br>
+ <audio src="audio1.mp3" type="audio/mp3" controls></audio>
+
+ <p>I am into Web Development, because I love creating interactive and user-friendly websites.</p>
+ 
+ <figure>
+ <img src="picture1.jpg" alt="Picture of Laptop" style="height:400px; width:auto;">
+ <figcaption>A nice laptop</figcaption>
+ </figure>
+
+ <p>Tech is a wide field and also an exciting one too. <mark> As a passionateTech has opened my eyes to the vast opportunities within the space.</mark> Its a learning and money making ecosystem.</p>
+
+ </article>
+
+ <aside>
+ <details>
+ <summary>More about <mark>Me.</mark></summary>
+ <p>I am an aspiring front end developer with a passion for learning and building tech products that makes Life easier.</p>
+ </details>
+ </aside>
+ <br><br><br>
+ <iframe src="https://maps.google.com/maps?q=Port+Harcourt,+Rivers+State,+Nigeria&output=embed" allow="fullscreen; geolocation" loading="lazy" style="width: 600px; height: 600px; border: bold green 4px;"></iframe> 
+</section>
+ 
+ <section id="contact-form">
+ <h2>Contact Form</h2>
+ 
+ <form>
+ <label for="name">Name:</label>
+ <input type="text" id="name" name="name"><br><br>
+
+ <label for="email">Email:</label>
+ <input type="email" id="email" name="email"><br><br>
+
+ <label for="phone">Phone Number:</label>
+ <input type="tel" id="phone" name="phone"><br><br>
+
+ <label for="gender">Gender:</label>
+ <input type="radio" id="male" name="gender" value="male">
+ <label for="male">Male</label>
+ <input type="radio" id="female" name="gender" value="female">
+ <label for="female">Female</label><br><br>
+
+ <label for="country">Country:</label>
+ <select id="country" name="country">
+ <option value="Russia">Russia</option>
+ <option value="Canada">Canada</option>
+ <option value="Nigeria">Nigeria</option>
+ <option value="Germany">Germany</option>
+ <option value="Australia">Australia</option>
+ </select><br><br>
+
+ <label for="note">Note:</label>
+ <textarea id="note" name="note"></textarea>
+ <br><br> 
+ 
+ <input type="submit" value="Submit">
+
+ </form>
+ </section>
+ </main><br><br><br>
+ 
+ <footer style="text-align: center; color: rgb(90, 50, 50); padding: 5px; background-color: #f0f0f0;">
+ <p>&copy; Iniobong Okon Uya 2025 Genesys Upskill</p>
+ </footer>
+ 
+</body>
+</html>
