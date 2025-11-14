@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Arrays, Objects and Functions Drill</title>
+</head>
+<body>
+    <h3>JS Drill</h3>
+
+    <script>
+//Array Drill:
+// Create an array of your favorite songs. Print the first and last song, add one more to the list,
+// remove the first, and show how many songs remain.
+ let songs = ["God will make a way", "Excess Love", "Nara Ekele"];
+
+ console.log(songs); 
+
+ songs.splice(1, 1)
+ console.log(songs); 
+
+ songs.push("Testimony"); 
+ console.log(songs); 
+
+ songs.shift();
+ console.log(songs); 
+
+console.log(songs.length);
+
+
+// Object Drill:
+// Create an object called car with properties for brand, model, year, and color. Log a sentence
+// describing it, such as “My car is a blue 2021 Honda Civic.”
+let car = {
+    brand: "Honda", 
+    model: "Civic", 
+    year: "2021", 
+    color: "blue"
+}; 
+
+console.log(`My car is a ${car.color} ${car.year} ${car.brand} ${car.model}`); 
+
+
+// Function Drill:
+// Write a function describeCar(car) that takes the object above and prints a sentence about
+// it.
+
+function describeCar(car) {
+    console.log(`My car is a ${car.color} ${car.year} ${car.brand} ${car.model}`)
+}; 
+
+describeCar(car);
+
+
+    </script>
+</body>
+</html>

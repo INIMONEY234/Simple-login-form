@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">John Doe</div>
+            <ul class="nav-links">
+                <li><a href= ""      ></a>               
+                <li><a href="#projects">Projects</a></li>
+                <li><a href= ""      ></a>                          
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="profile.jpg" alt="John Doe">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <p>I'm John Doe, a web developer with a passion for building responsive and interactive websites.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>A mobile app developed with React Native.</p>
+            </div>
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>A web application built with Node.js and Express.js.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="social-media">
+            <a href="https://github.com/johndoe" target="_blank"><i class="fab fa-github"></i>git</a>
+            <a href="https:  " >fb</a>                                                                              
+            <a href="https://twitter.com/johndoe" target="_blank"><i class="fab fa-twitter">twitter</i></a>
+        </div>
+    </footer>
+
+    <script src="script.js">
+        // Hamburger Menu Toggle
+
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+        });
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+body {
+  background: #eceef7;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* MAIN CONTAINER */
+.container {
+  width: 40%;
+  max-width: 500px;
+  min-width: 280px;
+}
+
+/* FORM */
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+label {
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 8px 0 15px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  font-weight: 600;
+  align-items: center;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #4a4ee6;
+  color: white;
+  font-size: 16px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2f32b8;
+  font-weight: 600;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* POPUP — MATCHES FORM STYLE */
+#popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 40%;
+  max-width: auto;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+#popup h2 {
+  margin-bottom: 10px;
+  color: #2f32b8;
+}
+
+#popup p {
+  margin: 6px 0;
+  word-wrap: break-word;
+}
+
+#popup .popup-content {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#popup .popup-content p,
+#popup .popup-content h2 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin: 8px 0;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; scale: 0.85; }
+  to { opacity: 1; scale: 1; }
+}
+
+/* -------------------------- */
+/* RESPONSIVENESS SECTION     */
+/* -------------------------- */
+/* ========================= */
+/*        TABLETS (≤900px)   */
+/* ========================= */
+@media (max-width: 900px) {
+
+  .container {
+    width: 60%;
+  }
+
+  #popup {
+    width: 60%;
+  }
+
+  #popup .popup-content {
+    padding: 12px;
+  }
+
+  #popup .popup-content h2 {
+    font-size: 20px;
+  }
+
+  #popup .popup-content p {
+    font-size: 15px;
+  }
+}
+
+
+/* ========================= */
+/*     LARGE PHONES (≤600px) */
+/* ========================= */
+@media (max-width: 600px) {
+
+  .container {
+    width: 80%;
+  }
+
+  #popup {
+    width: 80%;
+    padding: 18px;
+  }
+
+  #popup .popup-content {
+    padding: 14px;
+  }
+
+  #popup .popup-content h2 {
+    font-size: 18px;
+  }
+
+  #popup .popup-content p {
+    font-size: 14px;
+  }
+}
+
+
+/* ========================= */
+/*     SMALL PHONES (≤400px) */
+/* ========================= */
+@media (max-width: 400px) {
+
+  .container {
+    width: 95%;
+  }
+
+  #popup {
+    width: 95%;
+    padding: 16px;
+  }
+
+  #popup .popup-content {
+    padding: 16px;
+  }
+
+  #popup .popup-content h2 {
+    font-size: 17px;
+  }
+
+  #popup .popup-content p {
+    font-size: 13px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  input {
+    padding: 9px;
+  }
+}

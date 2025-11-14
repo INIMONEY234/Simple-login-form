@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Login Form</title>
+</head>
+<body>
+  <div class="container">
+    <form class="form" action="/submit" method="post">
+      <div class="username">
+        <label for="Username" class="username type-name" id="Username">Type Username:</label>
+        <input type="text" id="usernamex" name="username" placeholder="Your Username" required>
+      </div>
+
+      <div class="phone">
+        <label for="phone" class="phone type-name" id="phone">Type your phone number:</label>
+        <input type="mobile" id="phonex" name="phone" placeholder="Your phone number" required>
+      </div>
+      
+      <div class="email">
+        <label for="Email" class="Email type-name" id="Email">Type Email:</label>
+        <input type="email" id="Emailx" name="Email" placeholder="Your email address" required>
+      </div>
+
+      <div class="password">
+        <label for="Password"  id="password">Enter your Password:</label>
+        <input type="password" id="Passwordx" name="password" required placeholder="Your password">
+      </div>
+      
+           <audio id="sound" src="sound.wav"></audio>
+
+      <button type="button" id="submit">Login</button>
+    </form>
+
+     <div id="popup"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

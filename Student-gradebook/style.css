@@ -1,0 +1,13 @@
+#task {
+    margin: auto;
+    border: solid 4px skyblue;
+    width: 400px;
+    height: 450px;
+    align-items: center;
+};
+
+h3 {
+    font-size: 24px;
+    display: flex;
+    font-style: italic;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Simple Quiz App</h3>
+
+    <script>
+    // === SIMPLE INTERACTIVE QUIZ APP ===
+// Developer: INIOBONG OKON UYA 
+// Description: A console-based JavaScript quiz demonstrating variables, loops, data types, and control flow.
+
+// === STEP 1: DECLARE VARIABLES ===
+
+// Variable to store the user's name (string)
+let userName = prompt("Welcome to the JavaScript Quiz! What is your name?");
+
+// Constant to store the total number of questions (number)
+const totalQuestions = 5;
+
+// Variable to store the score (number)
+let score = 0;
+
+// Array to store incorrect questions (array of strings)
+let incorrectAnswers = [];
+
+// === STEP 2: STORE QUESTIONS AND ANSWERS ===
+const quiz = [
+  {
+    question: "1. Which keyword is used to declare a variable in JavaScript?",
+    answer: "let"
+  },
+  {
+    question: "2. What data type does the value true belong to?",
+    answer: "boolean"
+  },
+  {
+    question: "3. Which method converts a string to lowercase in JavaScript?",
+    answer: "tolowercase()"
+  },
+  {
+    question: "4. What symbol is used for strict equality comparison?",
+    answer: "==="
+  },
+  {
+    question: "5. Which function displays a message in the console?",
+    answer: "console.log"
+  }
+];
+
+// === STEP 3: GREETING MESSAGE ===
+console.log(`Hello, ${userName}! 👋 Let's test your JavaScript knowledge.`);
+console.log("Answer the following questions:");
+
+// === STEP 4: LOOP THROUGH QUESTIONS ===
+for (let i = 0; i < quiz.length; i++) {
+  // Prompt user for an answer
+  let userAnswer = prompt(quiz[i].question);
+
+  // Convert both answers to lowercase for flexible comparison
+  if (userAnswer.toLowerCase() === quiz[i].answer.toLowerCase()) {
+    console.log("✅ Correct!");
+    score++; // Increase score
+  } else {
+    console.log(`❌ Wrong! The correct answer is: ${quiz[i].answer}`);
+    incorrectAnswers.push(quiz[i].question); // Track wrong answers
+  }
+}
+
+// === STEP 5: DISPLAY RESULTS ===
+console.log("🎯 QUIZ COMPLETE!");
+console.log(`Your total score: ${score} / ${totalQuestions}`);
+
+// Conditional feedback (if-else example)
+if (score === totalQuestions) {
+  console.log("🌟 Excellent! You got a perfect score!");
+} else if (score >= 3) {
+  console.log("👍 Good job! You have a solid understanding.");
+} else {
+  console.log("💡 Keep practicing JavaScript to improve!");
+}
+
+// Display incorrect questions (if any)
+if (incorrectAnswers.length > 0) {
+  console.log("You missed the following questions:");
+  for (let q of incorrectAnswers) {
+    console.log(`- ${q}`);
+  }
+}
+
+// === STEP 6: REPLAY OPTION USING DO-WHILE LOOP ===
+let replay;
+do {
+  replay = prompt("Would you like to retake the quiz? (yes/no)").toLowerCase();
+
+  if (replay === "yes") {
+    location.reload(); // Reloads the page to restart the quiz
+  } else if (replay === "no") {
+    console.log(`Thanks for playing, ${userName}! 👋`);
+  } else {
+    console.log("Please enter 'yes' or 'no'.");
+  }
+} while (replay !== "yes" && replay !== "no");
+
+    </script>
+</body>
+</html>
